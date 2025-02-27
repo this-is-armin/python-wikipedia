@@ -1,27 +1,29 @@
 from tkinter import *
 from tkinter.messagebox import showerror
+
 from wikipedia import summary
+
 
 def get_answer():
     try:
-        answer.delete(1.0, END)
+        answer.delete(1.0, END) 
         answer.insert(INSERT, summary(search_box.get()))
     except Exception as error:
         showerror('Error', error)
 
-#f Fonts
+# Fonts
 font1 = ('Boulder', 20, 'bold')
 font2 = ('Boulder', 25, 'bold')
 font3 = ('Arial', 15)
 
 # Main window / Object
 root = Tk()
-root.title('Python WikiPedia Application')
+root.title('Python Wikipedia')
 root.config(bg='lightblue')
 root.geometry('750x630')
 root.resizable(0, 0)
 
-header = Label(root, text='WikiPedia with Python', fg='white', bg='black', font=font2, width=100, borderwidth=20)
+header = Label(root, text='Python Wikipedia', fg='white', bg='black', font=font2, width=100, borderwidth=20)
 header.pack()
 
 # Top frame for search button and search box

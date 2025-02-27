@@ -1,11 +1,9 @@
-Wikipedia in Python
+## Wikipedia application made with Python
 
-Project implementation steps:
+### To run the app, you need run the following commands:
 
-1: Go to the project path in the terminal
+```shell
+pip install -r requirements.txt
 
-2: Write the following commands:
-
-    pip install -r requirements.txt
-
-    python wikipedia.py
+python wikipedia.py
+```
