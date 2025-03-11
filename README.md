@@ -1,5 +1,4 @@
-## Wikipedia app with Python
-
+# Installing
 ### Run the following command:
 
 ```shell
